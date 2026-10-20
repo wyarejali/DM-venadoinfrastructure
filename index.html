@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venado Infrastructure | Dirt, Utilities, Concrete — Self-Performed Sitework</title>
+<meta name="description" content="Venado Infrastructure moves the dirt, lays the utilities and pours the concrete that every project starts with. Own iron, own crews, and quantities we stand behind. Add us to your bid list.">
+<meta name="theme-color" content="#0D160D">
+
+<link rel="icon" href="img/brand/venado-antler-logo.png" sizes="any">
+<link rel="apple-touch-icon" href="img/brand/venado-antler-logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Archivo:wght@300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!--
+  ==========================================================================
+  THE DATA RULE — read before editing.
+
+  Nothing on this page invents a client fact. Every unsupplied value renders
+  through the .dn class, which draws it in brackets, in monospace, with an
+  amber warning tick and a dotted rule, so a placeholder can never be read as
+  a claim. Currently unset and waiting on Venado:
+
+    · the equipment list (types, classes, counts)
+    · every quantity and unit value
+    · typical project size
+    · the capabilities cut sheet PDF
+    · all project names, scopes, quantities and sizes
+    · phone, email and office address
+
+  No certification, bonding, response-time or capability claim is made
+  anywhere. The three capabilities — dirt, utilities, concrete — carry only
+  the scope items named in the positioning brief and nothing else.
+
+  THE LOGO — img/brand/venado-antler-logo.png is the supplied antler mark,
+  used as-is in the header lockup, the hero watermark, the final CTA and the
+  favicon. It is never redrawn, recoloured or stretched. There is no
+  Infrastructure lockup file yet, so the wordmark is typeset VENADO /
+  INFRASTRUCTURE in the same construction as the Commercial and Restoration
+  lockups. img/brand/venado-logo.png is the Venado PARTNERS lockup and is
+  used once, in the family band, where it belongs — never as the
+  Infrastructure brand.
+  ==========================================================================
+-->
+
+<!-- Glyphs, defined once and referenced where needed. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-doc" viewBox="0 0 24 30">
+    <path d="M1 1h13l9 9v19H1z"/><path d="M14 1v9h9"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 16 16">
+    <path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  </symbol>
+</svg>
+
+
+<!-- ============================== HEADER ============================== -->
+<header class="header" id="header">
+  <div class="header__inner">
+
+    <a class="brand" href="#top" aria-label="Venado Infrastructure, home">
+      <img class="antler brand__mark" src="img/brand/venado-antler-logo.png" alt="" width="534" height="626" decoding="async">
+      <span class="brand__type">
+        <span class="brand__word">Venado</span>
+        <span class="brand__div">Infrastructure</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#top" data-nav="top">Home</a></li>
+        <li><a class="nav__link" href="#capabilities" data-nav="capabilities">Capabilities</a></li>
+        <li><a class="nav__link" href="#quantities" data-nav="quantities">Quantities</a></li>
+        <li><a class="nav__link" href="#equipment" data-nav="equipment">Equipment</a></li>
+        <li><a class="nav__link" href="#projects" data-nav="projects">Projects</a></li>
+        <li><a class="nav__link" href="#bid" data-nav="bid">Bid-Ready</a></li>
+      </ul>
+
+      <!-- The primary action on this site, in the bar and in the drawer. -->
+      <a class="btn btn--foil btn--sm nav__cta" href="#invitation"><span>Add Us To Your Bid List</span></a>
+
+      <div class="nav__foot">
+        <span>Estimating &mdash; <span class="dn dn--light">[&nbsp;email@venadoinfrastructure.com&nbsp;]</span></span>
+        <span>A Venado Partners company</span>
+      </div>
+    </nav>
+
+    <!-- Once the nav collapses, the bid CTA stays in the bar on its own. -->
+    <a class="bidbtn" href="#invitation" aria-label="Add us to your bid list"><span>Bid List</span></a>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main id="main">
+
+<!-- =============================== HERO =============================== -->
+<section class="hero" id="top">
+
+  <div class="hero__media">
+    <img src="img/hero-sitework.jpg" alt="An active commercial sitework package: excavators cutting a pad, an articulated dump truck placing fill, and graded subgrade running back to a building shell" width="2000" height="1182" fetchpriority="high" decoding="async">
+  </div>
+
+  <!-- The sheet grid, laid over the photograph the way a drawing overlays a site -->
+  <div class="grid-bg grid-bg--dark hero__grid" aria-hidden="true"></div>
+
+  <img class="antler hero__watermark" src="img/brand/venado-antler-logo.png" alt="" width="534" height="626" aria-hidden="true" decoding="async">
+
+  <div class="hero__inner">
+
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--light reveal">Self-Performed Sitework</p>
+
+      <!-- The positioning, set as a measured scope string. -->
+      <p class="scope reveal" data-delay="1">
+        <span>Dirt</span><i>&mdash;</i><span>Utilities</span><i>&mdash;</i><span>Concrete</span>
+      </p>
+
+      <h1 class="hero__title reveal" data-delay="2">We move what every project <em>starts with.</em></h1>
+
+      <p class="hero__lede reveal" data-delay="3">
+        <strong>Own iron. Own crews.</strong> We move the dirt, lay the utilities and pour the concrete
+        that everything else is built on &mdash; self-performed, and bid in quantities we stand behind.
+      </p>
+
+      <div class="hero__actions reveal" data-delay="4">
+        <a class="btn btn--foil" href="#invitation"><span>Add Us To Your Bid List</span></a>
+        <a class="btn btn--ghost" href="#capabilities"><span>View Our Capabilities</span></a>
+      </div>
+    </div>
+
+    <!-- The drawing-sheet title block, in the corner of the sheet where it
+         belongs. Every value in it is unset. -->
+    <div class="tblock hero__tblock reveal" data-delay="5" aria-label="Sheet information">
+      <div class="tblock__cell">
+        <span class="tblock__k">Scope</span>
+        <span class="tblock__v">Dirt / Utilities /<br>Concrete</span>
+      </div>
+      <div class="tblock__cell">
+        <span class="tblock__k">Delivery</span>
+        <span class="tblock__v">Self-performed</span>
+      </div>
+      <div class="tblock__cell">
+        <span class="tblock__k">Market</span>
+        <span class="tblock__v"><span class="dn dn--light">[&nbsp;region&nbsp;]</span></span>
+      </div>
+      <div class="tblock__cell">
+        <span class="tblock__k">Prequal</span>
+        <span class="tblock__v">On request</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Spec bar: the four things a buyer is qualifying, stated plainly. -->
+  <div class="spec">
+    <div class="shell">
+      <div class="spec__grid">
+        <div class="spec__cell">
+          <span class="spec__k">Own Iron</span>
+          <span class="spec__v">Venado equipment on Venado jobs.</span>
+        </div>
+        <div class="spec__cell">
+          <span class="spec__k">Own Crews</span>
+          <span class="spec__v">Dirt, utilities and concrete run by our people.</span>
+        </div>
+        <div class="spec__cell">
+          <span class="spec__k">Self-Performed</span>
+          <span class="spec__v">The sitework package stays in one set of hands.</span>
+        </div>
+        <div class="spec__cell">
+          <span class="spec__k">Quantities</span>
+          <span class="spec__v">Numbers we stand behind, not numbers we hope for.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================ CAPABILITIES ============================
+     The signature device: three strata in build sequence, threaded by one
+     continuous rail. The rail is the argument — dirt, utilities and concrete
+     are one self-performed package, not three subcontracts.
+     The scope items under each number are exactly those named in the
+     positioning brief. Nothing has been added.                            -->
+<section class="section strata" id="capabilities" aria-labelledby="cap-title">
+  <div class="shell">
+
+    <div class="strata__head">
+      <div>
+        <p class="eyebrow reveal">The three capabilities</p>
+        <h2 class="h2 reveal" data-delay="1" id="cap-title">Dirt, then utilities,<br>then concrete.</h2>
+      </div>
+      <div class="reveal" data-delay="2">
+        <p class="strata__note">
+          Every project starts underground and works its way up. Venado Infrastructure
+          <strong>self-performs all three courses</strong> &mdash; the same iron, the same crews and the same
+          quantities carrying the package from first cut to final pour.
+        </p>
+      </div>
+    </div>
+
+    <!-- The station rule: chainage across the top of the three courses. -->
+    <div class="ticks ticks--ink strata__ticks" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <div class="strata__list">
+
+      <!-- 01 DIRT -->
+      <article class="stratum">
+        <div class="stratum__rail" aria-hidden="true">
+          <span class="stratum__node"></span>
+          <span class="stratum__n">01</span>
+        </div>
+
+        <div class="stratum__body">
+          <p class="stratum__k">Earthwork</p>
+          <h3 class="stratum__t">Dirt</h3>
+          <p class="stratum__p">
+            The first thing on site and the thing every later trade inherits. We cut, move
+            and place the material, then hand over a pad that holds the grades it was given.
+          </p>
+
+          <ul class="stratum__scope">
+            <li>Mass excavation</li>
+            <li>Grading</li>
+            <li>Pads</li>
+            <li>Site balance</li>
+          </ul>
+
+          <div class="stratum__meas">
+            <div class="stratum__units">
+              <span class="unit">CY</span><span class="unit">SF</span><span class="unit">Cut / Fill</span>
+            </div>
+            <div class="dim dim--ink" aria-hidden="true">
+              <span class="dim__end"></span><span class="dim__run"></span>
+              <span class="dim__txt">Quantities on request</span>
+              <span class="dim__run"></span><span class="dim__end"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stratum__media">
+          <img src="img/cap/cap-01-dirt.jpg" alt="A motor grader cutting subgrade on an open site, blade down and windrow running off the mouldboard" width="1600" height="1200" loading="lazy" decoding="async">
+          <p class="annot annot--light stratum__frame">01 &mdash; Grading operation</p>
+        </div>
+      </article>
+
+      <!-- 02 UTILITIES -->
+      <article class="stratum">
+        <div class="stratum__rail" aria-hidden="true">
+          <span class="stratum__node"></span>
+          <span class="stratum__n">02</span>
+        </div>
+
+        <div class="stratum__body">
+          <p class="stratum__k">Wet Utilities</p>
+          <h3 class="stratum__t">Utilities</h3>
+          <p class="stratum__p">
+            Everything that goes in the ground before it is closed up. Trench, bed, lay,
+            structure and tie in &mdash; the work nobody sees again once the pour goes down.
+          </p>
+
+          <ul class="stratum__scope">
+            <li>Water</li>
+            <li>Sanitary sewer</li>
+            <li>Storm drainage</li>
+            <li>Structures</li>
+            <li>Tie-ins</li>
+          </ul>
+
+          <div class="stratum__meas">
+            <div class="stratum__units">
+              <span class="unit">LF</span><span class="unit">EA</span><span class="unit">Depth</span><span class="unit">Invert</span>
+            </div>
+            <div class="dim dim--ink" aria-hidden="true">
+              <span class="dim__end"></span><span class="dim__run"></span>
+              <span class="dim__txt">Quantities on request</span>
+              <span class="dim__run"></span><span class="dim__end"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stratum__media">
+          <img src="img/cap/cap-02-utilities.jpg" alt="An open utility trench in a city street with crew working the line and an excavator holding the cut" width="1600" height="1200" loading="lazy" decoding="async">
+          <p class="annot annot--light stratum__frame">02 &mdash; Utility installation</p>
+        </div>
+      </article>
+
+      <!-- 03 CONCRETE -->
+      <article class="stratum">
+        <div class="stratum__rail" aria-hidden="true">
+          <span class="stratum__node"></span>
+          <span class="stratum__n">03</span>
+        </div>
+
+        <div class="stratum__body">
+          <p class="stratum__k">Site Concrete</p>
+          <h3 class="stratum__t">Concrete</h3>
+          <p class="stratum__p">
+            The surface the site is finally judged on. Formed, placed and finished by the
+            same outfit that set the grades it sits on, so the elevations still agree.
+          </p>
+
+          <ul class="stratum__scope">
+            <li>Paving</li>
+            <li>Curb and gutter</li>
+            <li>Flatwork</li>
+            <li>Site structural</li>
+          </ul>
+
+          <div class="stratum__meas">
+            <div class="stratum__units">
+              <span class="unit">SF</span><span class="unit">LF</span><span class="unit">CY</span><span class="unit">Thickness</span>
+            </div>
+            <div class="dim dim--ink" aria-hidden="true">
+              <span class="dim__end"></span><span class="dim__run"></span>
+              <span class="dim__txt">Quantities on request</span>
+              <span class="dim__run"></span><span class="dim__end"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stratum__media">
+          <img src="img/cap/cap-03-concrete.jpg" alt="A concrete crew screeding and floating a freshly placed slab over reinforcing steel" width="1600" height="1200" loading="lazy" decoding="async">
+          <p class="annot annot--light stratum__frame">03 &mdash; Concrete placement</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= QUANTITIES =============================
+     The proof block. It builds the visual system for speaking in quantities
+     without inventing one. The units and field names are real; every value
+     slot is openly unset and marked. An estimator should read this as
+     "they measure work properly and they will give me the numbers".      -->
+<section class="section qty band--black" id="quantities" aria-labelledby="qty-title">
+  <div class="grid-bg grid-bg--dark" aria-hidden="true"></div>
+  <div class="shell qty__inner">
+
+    <div class="qty__head">
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Proof</p>
+        <h2 class="h2 h2--light reveal" data-delay="1" id="qty-title">Quantities we<br>stand behind.</h2>
+      </div>
+      <div class="reveal" data-delay="2">
+        <p class="qty__note">
+          A sitework bid is a set of numbers somebody has to own. <strong>We price the work we
+          intend to perform, in the units it is measured in</strong>, and we put our name against
+          the take-off. Ask and the numbers come with the package.
+        </p>
+      </div>
+    </div>
+
+    <!-- The board. Six measured fields. No value is asserted anywhere. -->
+    <div class="qty__board reveal" data-delay="1">
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Earthwork moved</span>
+          <span class="unit unit--light">CY</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">Cubic yards of material excavated, hauled and placed.</p>
+      </div>
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Utilities installed</span>
+          <span class="unit unit--light">LF</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">Linear feet of water, sanitary and storm line in the ground.</p>
+      </div>
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Concrete placed</span>
+          <span class="unit unit--light">SF / CY</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">Paving, flatwork and site structural, measured as placed.</p>
+      </div>
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Curb and gutter</span>
+          <span class="unit unit--light">LF</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">Linear feet of formed and poured curb line.</p>
+      </div>
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Aggregate and base</span>
+          <span class="unit unit--light">Tons</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">Imported material by weight, placed and compacted.</p>
+      </div>
+
+      <div class="qty__cell">
+        <div class="qty__top">
+          <span class="qty__k">Typical project size</span>
+          <span class="unit unit--light">Acres / $</span>
+        </div>
+        <div class="qty__slot"><span class="dn dn--light">[&nbsp;value not supplied&nbsp;]</span></div>
+        <p class="qty__desc">The band of work Venado is set up to carry comfortably.</p>
+      </div>
+
+    </div>
+
+    <figure class="qty__media reveal" data-delay="2">
+      <img src="img/quantities-aerial.jpg" alt="A graded corridor photographed straight down, showing track marks across cut subgrade and a completed box structure at the road crossing" width="1800" height="1013" loading="lazy" decoding="async">
+      <figcaption class="qty__cap">
+        <span class="annot annot--light">Plan view &mdash; graded corridor and structure</span>
+        <span class="annot annot--light">Scale <span class="dn dn--light">[&nbsp;n.t.s.&nbsp;]</span></span>
+      </figcaption>
+    </figure>
+
+    <div class="close__dim" style="margin-top:clamp(30px,3.4vw,44px)">
+      <div class="dim dim--light" aria-hidden="true">
+        <span class="dim__end"></span><span class="dim__run"></span>
+        <span class="dim__txt">Take-off available with the qualification package</span>
+        <span class="dim__run"></span><span class="dim__end"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================= EQUIPMENT & CAPABILITIES =====================
+     The estimator's resource centre, laid out like a prequal packet rather
+     than a marketing block. Three things a buyer needs to qualify Venado:
+     the equipment schedule, the typical project size, and the cut sheet.
+     All three are currently unset and say so.                            -->
+<section class="section eq" id="equipment" aria-labelledby="eq-title">
+  <div class="shell eq__inner">
+
+    <div class="eq__head">
+      <div>
+        <p class="eyebrow reveal">Qualification</p>
+        <h2 class="h2 reveal" data-delay="1" id="eq-title">Equipment &amp;<br>capabilities.</h2>
+      </div>
+      <div class="reveal" data-delay="2">
+        <p class="eq__note">
+          Everything you need to qualify us, in one place. <strong>Own iron means the schedule below
+          is ours</strong>, not a rental list assembled per job. Ask for the package and it comes back
+          as a single document.
+        </p>
+      </div>
+    </div>
+
+    <div class="eq__grid">
+
+      <!-- The equipment schedule, with its columns headed and rows unset. -->
+      <div class="sheet reveal">
+        <div class="sheet__head">
+          <h3 class="sheet__ttl">Equipment schedule</h3>
+          <span class="label">Owned fleet</span>
+        </div>
+        <div class="sheet__body">
+          <table class="sched">
+            <caption class="sr">Venado Infrastructure owned equipment by class. All counts and models are pending client data.</caption>
+            <thead>
+              <tr><th scope="col">Class</th><th scope="col">Detail</th><th scope="col">Count</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="sched__cls">Excavation</span><span class="sched__sub">Mass excavation and trenching</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+              <tr>
+                <td><span class="sched__cls">Grading</span><span class="sched__sub">Pads, subgrade and site balance</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+              <tr>
+                <td><span class="sched__cls">Hauling</span><span class="sched__sub">Material movement on and off site</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+              <tr>
+                <td><span class="sched__cls">Compaction</span><span class="sched__sub">Subgrade and base</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+              <tr>
+                <td><span class="sched__cls">Concrete</span><span class="sched__sub">Paving, curb and flatwork</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+              <tr>
+                <td><span class="sched__cls">Support</span><span class="sched__sub">Survey, layout and field</span></td>
+                <td><span class="dn">[&nbsp;makes / models&nbsp;]</span></td>
+                <td><span class="dn">[&nbsp;qty&nbsp;]</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="eq__side">
+
+        <!-- Typical project size -->
+        <div class="sheet reveal" data-delay="1">
+          <div class="sheet__head">
+            <h3 class="sheet__ttl">Typical project size</h3>
+            <span class="label">Range</span>
+          </div>
+          <div class="sheet__body">
+            <div class="rec__dl" style="margin-top:0">
+              <div class="rec__row"><dt>Site area</dt><dd><span class="dn">[&nbsp;acres&nbsp;]</span></dd></div>
+              <div class="rec__row"><dt>Contract value</dt><dd><span class="dn">[&nbsp;range&nbsp;]</span></dd></div>
+              <div class="rec__row"><dt>Duration</dt><dd><span class="dn">[&nbsp;weeks&nbsp;]</span></dd></div>
+              <div class="rec__row"><dt>Market</dt><dd><span class="dn">[&nbsp;region served&nbsp;]</span></dd></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The cut sheet. No file exists yet, so no download is offered. -->
+        <div class="sheet reveal" data-delay="2">
+          <div class="sheet__head">
+            <h3 class="sheet__ttl">Capabilities cut sheet</h3>
+            <span class="label">PDF</span>
+          </div>
+          <div class="sheet__body">
+            <div class="cutsheet">
+              <div class="cutsheet__plate">
+                <svg class="cutsheet__ico" viewBox="0 0 24 30" aria-hidden="true"><use href="#i-doc"></use></svg>
+                <div class="cutsheet__meta">
+                  <p class="cutsheet__file">venado-infrastructure-capabilities.pdf</p>
+                  <span class="cutsheet__state dn">[&nbsp;file not yet supplied&nbsp;]</span>
+                </div>
+              </div>
+              <p class="qty__desc" style="color:var(--ink-soft)">
+                Scope, equipment, typical project size and project experience in one
+                document. Request it and we will send the current version.
+              </p>
+              <a class="btn btn--outline btn--full btn--sm" href="#invitation"><span>Request The Cut Sheet</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <figure class="eq__strip reveal" data-delay="1">
+      <img src="img/equipment-fleet.jpg" alt="A line of owned earthmoving equipment staged along the edge of a graded site" width="2000" height="800" loading="lazy" decoding="async">
+      <figcaption class="annot annot--light eq__stripcap">Fleet staged on site &mdash; owned iron</figcaption>
+    </figure>
+
+    <div style="margin-top:clamp(30px,3.4vw,44px)">
+      <div class="dim dim--ink" aria-hidden="true">
+        <span class="dim__end"></span><span class="dim__run"></span>
+        <span class="dim__txt">Full qualification package on request</span>
+        <span class="dim__run"></span><span class="dim__end"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== PROJECTS ==============================
+     Not a portfolio. A record sheet. Each entry leads with what was actually
+     performed and in what units, because that is what an estimator reads
+     for. Names, scopes, quantities and sizes are all pending client data. -->
+<section class="section proj" id="projects" aria-labelledby="proj-title">
+  <div class="shell">
+
+    <div class="proj__head">
+      <div>
+        <p class="eyebrow reveal">Project record</p>
+        <h2 class="h2 reveal" data-delay="1" id="proj-title">What we actually<br>performed.</h2>
+      </div>
+      <div class="reveal" data-delay="2">
+        <p class="proj__note">
+          Read these the way you would read a reference sheet: scope, quantity, units, and
+          which of the three courses Venado carried. Photographs are here to show the work,
+          not to sell the finished building.
+        </p>
+      </div>
+    </div>
+
+    <div class="proj__list">
+
+      <article class="rec reveal">
+        <div class="rec__media">
+          <img src="img/proj/proj-01.jpg" alt="Mass excavation seen from above, articulated haulers loading in a cut with excavators working the face" width="1400" height="1050" loading="lazy" decoding="async">
+          <p class="rec__no">Project 01</p>
+        </div>
+        <div class="rec__body">
+          <h3 class="rec__name"><span class="dn">[&nbsp;project name&nbsp;]</span></h3>
+          <dl class="rec__dl">
+            <div class="rec__row"><dt>Scope</dt><dd><span class="dn">[&nbsp;scope of work&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Quantity</dt><dd><span class="dn">[&nbsp;quantity&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Units</dt><dd><span class="dn">[&nbsp;CY / LF / SF / tons&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Project size</dt><dd><span class="dn">[&nbsp;acres / value&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Duration</dt><dd><span class="dn">[&nbsp;weeks&nbsp;]</span></dd></div>
+          </dl>
+          <p class="label" style="margin-top:22px">Work performed</p>
+          <div class="rec__work">
+            <span>Dirt</span><span>Utilities</span><span>Concrete</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="rec reveal">
+        <div class="rec__media">
+          <img src="img/proj/proj-02.jpg" alt="A building pad excavation photographed straight down, footing lines cut into sand with spoil stockpiled around the perimeter" width="1400" height="1050" loading="lazy" decoding="async">
+          <p class="rec__no">Project 02</p>
+        </div>
+        <div class="rec__body">
+          <h3 class="rec__name"><span class="dn">[&nbsp;project name&nbsp;]</span></h3>
+          <dl class="rec__dl">
+            <div class="rec__row"><dt>Scope</dt><dd><span class="dn">[&nbsp;scope of work&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Quantity</dt><dd><span class="dn">[&nbsp;quantity&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Units</dt><dd><span class="dn">[&nbsp;CY / LF / SF / tons&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Project size</dt><dd><span class="dn">[&nbsp;acres / value&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Duration</dt><dd><span class="dn">[&nbsp;weeks&nbsp;]</span></dd></div>
+          </dl>
+          <p class="label" style="margin-top:22px">Work performed</p>
+          <div class="rec__work">
+            <span>Dirt</span><span>Utilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="rec reveal">
+        <div class="rec__media">
+          <img src="img/proj/proj-03.jpg" alt="A night paving operation under lights, paver and crew working a fresh mat across an airside apron" width="1600" height="1200" loading="lazy" decoding="async">
+          <p class="rec__no">Project 03</p>
+        </div>
+        <div class="rec__body">
+          <h3 class="rec__name"><span class="dn">[&nbsp;project name&nbsp;]</span></h3>
+          <dl class="rec__dl">
+            <div class="rec__row"><dt>Scope</dt><dd><span class="dn">[&nbsp;scope of work&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Quantity</dt><dd><span class="dn">[&nbsp;quantity&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Units</dt><dd><span class="dn">[&nbsp;CY / LF / SF / tons&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Project size</dt><dd><span class="dn">[&nbsp;acres / value&nbsp;]</span></dd></div>
+            <div class="rec__row"><dt>Duration</dt><dd><span class="dn">[&nbsp;weeks&nbsp;]</span></dd></div>
+          </dl>
+          <p class="label" style="margin-top:22px">Work performed</p>
+          <div class="rec__work">
+            <span>Dirt</span><span>Concrete</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="margin-top:clamp(30px,3.4vw,44px)">
+      <div class="dim dim--ink" aria-hidden="true">
+        <span class="dim__end"></span><span class="dim__run"></span>
+        <span class="dim__txt">Additional references available on request</span>
+        <span class="dim__run"></span><span class="dim__end"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== BUILT FOR THE BID ========================
+     The strongest block on the page, and the reason the site exists. It says
+     qualification is a short conversation, then indexes the five things
+     Venado can hand over — each anchored to where it lives on this page.  -->
+<section class="section bid" id="bid" aria-labelledby="bid-title">
+  <div class="grid-bg grid-bg--dark" aria-hidden="true"></div>
+  <div class="shell bid__inner">
+    <div class="bid__grid">
+
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Bid-ready</p>
+        <h2 class="bid__title h2--light reveal" data-delay="1" id="bid-title">Built for<br>the bid.</h2>
+        <p class="lede lede--light bid__lede reveal" data-delay="2">
+          Qualifying a sitework contractor should take one email, not three weeks of chasing.
+          Everything you need to price us, vet us and put us on the list is either on this
+          page or one request away.
+        </p>
+        <div class="bid__actions reveal" data-delay="3">
+          <a class="btn btn--foil" href="#invitation"><span>Add Us To Your Bid List</span></a>
+          <a class="btn btn--ghost" href="#equipment"><span>Qualification Package</span></a>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="2">
+        <p class="label label--light" style="margin-bottom:18px">Available now</p>
+        <div class="bidx">
+          <a class="bidx__row" href="#equipment">
+            <span class="bidx__n">01</span>
+            <span class="bidx__t">Equipment schedule &mdash; owned fleet by class</span>
+            <span class="bidx__s">On page</span>
+          </a>
+          <a class="bidx__row" href="#capabilities">
+            <span class="bidx__n">02</span>
+            <span class="bidx__t">Capabilities &mdash; dirt, utilities, concrete</span>
+            <span class="bidx__s">On page</span>
+          </a>
+          <a class="bidx__row" href="#equipment">
+            <span class="bidx__n">03</span>
+            <span class="bidx__t">Typical project size and market</span>
+            <span class="bidx__s">On page</span>
+          </a>
+          <a class="bidx__row" href="#invitation">
+            <span class="bidx__n">04</span>
+            <span class="bidx__t">Capabilities cut sheet</span>
+            <span class="bidx__s">On request</span>
+          </a>
+          <a class="bidx__row" href="#projects">
+            <span class="bidx__n">05</span>
+            <span class="bidx__t">Project experience and references</span>
+            <span class="bidx__s">On page</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SITEWORK FIRST. BUILDING NEXT. ==================
+     The Commercial connection. Deliberately short — it names the
+     relationship and stops, so the two brands stay distinct.             -->
+<section class="first" aria-labelledby="first-title">
+  <div class="shell">
+    <div class="first__grid">
+
+      <figure class="first__media reveal">
+        <img src="img/sitework-strip.jpg" alt="An excavator loading a haul truck on a commercial pad, with the building shell rising behind it" width="1600" height="1067" loading="lazy" decoding="async">
+      </figure>
+
+      <div>
+        <p class="eyebrow reveal">The Venado family</p>
+        <h2 class="first__t reveal" data-delay="1" id="first-title">Sitework first.<br>Building next.</h2>
+        <p class="first__p reveal" data-delay="2">
+          <strong>Venado Infrastructure and Venado Commercial sell into the same rooms</strong> &mdash; the same
+          owners, developers and general contractors, at two different points on the same job.
+          Either one can hand the other work, and often does.
+        </p>
+        <div class="first__seq reveal" data-delay="3">
+          <b>Venado Infrastructure</b>
+          <i>&rarr;</i>
+          <b>Venado Commercial</b>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================== BID INVITATION ===========================
+     The contact experience is one thing: a bid invitation. Exactly the seven
+     fields the brief specifies — company, name, email, phone, project, scope,
+     bid date — and nothing else. Scope is picked rather than typed because
+     it is the field that sorts the invitation fastest.                    -->
+<section class="section inv" id="invitation" aria-labelledby="inv-title">
+  <div class="grid-bg grid-bg--dark" aria-hidden="true"></div>
+  <div class="shell inv__inner">
+    <div class="inv__grid">
+
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Bid invitation</p>
+        <h2 class="inv__title h2--light reveal" data-delay="1" id="inv-title">Add us to your<br>bid list.</h2>
+        <p class="lede lede--light inv__lede reveal" data-delay="2">
+          Send the project, tell us the scope, give us the bid date. That is the whole
+          conversation &mdash; we will confirm we are bidding and come back with questions if
+          we have any.
+        </p>
+
+        <div class="inv__steps reveal" data-delay="3">
+          <div class="inv__step"><b>01</b><span>Send us the project.</span></div>
+          <div class="inv__step"><b>02</b><span>Tell us the scope &mdash; dirt, utilities, concrete, or all three.</span></div>
+          <div class="inv__step"><b>03</b><span>Give us the bid date.</span></div>
+        </div>
+
+        <!-- DATA NOTE: replace every placeholder below with real details. -->
+        <dl class="inv__direct reveal" data-delay="4">
+          <div class="inv__d"><dt>Estimating</dt><dd><span class="dn dn--light">[&nbsp;estimating@venadoinfrastructure.com&nbsp;]</span></dd></div>
+          <div class="inv__d"><dt>Phone</dt><dd><span class="dn dn--light">[&nbsp;(000) 000-0000&nbsp;]</span></dd></div>
+          <div class="inv__d"><dt>Office</dt><dd><span class="dn dn--light">[&nbsp;Street, City, ST 00000&nbsp;]</span></dd></div>
+          <div class="inv__d"><dt>Company</dt><dd>A Venado Partners company</dd></div>
+        </dl>
+      </div>
+
+      <div class="invform reveal" data-delay="2">
+
+        <!-- The form is headed by a title block, like a sheet in a bid set. -->
+        <div class="tblock tblock--light invform__head" aria-hidden="true">
+          <div class="tblock__cell"><span class="tblock__k">Form</span><span class="tblock__v">Bid invitation</span></div>
+          <div class="tblock__cell"><span class="tblock__k">To</span><span class="tblock__v">Venado Infrastructure</span></div>
+          <div class="tblock__cell"><span class="tblock__k">Scope</span><span class="tblock__v">Dirt / Utilities / Concrete</span></div>
+          <div class="tblock__cell"><span class="tblock__k">Fields</span><span class="tblock__v">7</span></div>
+        </div>
+
+        <div class="invform__body">
+          <form class="form" id="bid-form" novalidate>
+
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Company</span>
+                <input class="field__input" type="text" name="company" autocomplete="organization" required>
+              </label>
+              <label class="field">
+                <span class="field__label">Name</span>
+                <input class="field__input" type="text" name="name" autocomplete="name" required>
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input class="field__input" type="email" name="email" autocomplete="email" required>
+              </label>
+              <label class="field">
+                <span class="field__label">Phone</span>
+                <input class="field__input" type="tel" name="phone" autocomplete="tel">
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field__label">Project<span class="field__opt">Name or location</span></span>
+              <input class="field__input" type="text" name="project" required>
+            </label>
+
+            <fieldset class="scopeset">
+              <legend class="field__label">Scope<span class="field__opt">Select all that apply</span></legend>
+              <div class="scopepick">
+                <label class="pick">
+                  <input type="checkbox" name="scope" value="dirt">
+                  <span data-u="CY / SF">Dirt</span>
+                </label>
+                <label class="pick">
+                  <input type="checkbox" name="scope" value="utilities">
+                  <span data-u="LF / EA">Utilities</span>
+                </label>
+                <label class="pick">
+                  <input type="checkbox" name="scope" value="concrete">
+                  <span data-u="SF / LF">Concrete</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span class="field__label">Bid date</span>
+              <input class="field__input field__input--date" type="date" name="biddate">
+            </label>
+
+            <button class="btn btn--foil btn--full" type="submit"><span>Add Us To Your Bid List</span></button>
+            <p class="form__note" id="form-note" role="status">Seven fields. No sales call, no follow-up sequence.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ VENADO FAMILY ===========================
+     The Venado Partners lockup, used here in its correct context and
+     nowhere else on the page.                                            -->
+<section class="family" aria-label="Venado family of companies">
+  <div class="shell family__inner">
+    <img class="family__logo reveal" src="img/brand/venado-logo.png" alt="Venado Partners" width="234" height="67" loading="lazy" decoding="async">
+    <p class="family__text reveal" data-delay="1">
+      <strong>Venado Infrastructure is the sitework arm of the Venado family of companies</strong>,
+      built on the same self-perform capability that Venado Commercial builds with and Venado
+      Restoration rebuilds with. One standard, one set of crews, one name behind the work.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== FINAL CTA ============================= -->
+<section class="close" aria-labelledby="close-title">
+  <div class="close__media" aria-hidden="true">
+    <img src="img/cta-site.jpg" alt="" width="1900" height="1140" loading="lazy" decoding="async">
+  </div>
+  <img class="antler close__mark" src="img/brand/venado-antler-logo.png" alt="" width="534" height="626" loading="lazy" aria-hidden="true" decoding="async">
+
+  <div class="shell close__inner">
+    <p class="eyebrow eyebrow--light reveal">Next step</p>
+    <h2 class="close__title reveal" data-delay="1" id="close-title">Put us on<br>the list.</h2>
+    <p class="close__lede reveal" data-delay="2">
+      Dirt, utilities and concrete, self-performed with our own iron and our own crews &mdash;
+      and priced in quantities we stand behind.
+    </p>
+
+    <div class="close__actions reveal" data-delay="3">
+      <a class="btn btn--foil" href="#invitation"><span>Add Us To Your Bid List</span></a>
+      <a class="btn btn--ghost" href="#equipment"><span>Equipment &amp; Capabilities</span></a>
+    </div>
+
+    <div class="close__dim reveal" data-delay="4">
+      <div class="dim dim--light" aria-hidden="true">
+        <span class="dim__end"></span><span class="dim__run"></span>
+        <span class="dim__txt">Dirt &mdash; Utilities &mdash; Concrete</span>
+        <span class="dim__run"></span><span class="dim__end"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="shell">
+
+    <div class="footer__top">
+
+      <div class="footer__brandcol">
+        <a class="brand" href="#top" aria-label="Venado Infrastructure, home">
+          <img class="antler brand__mark" src="img/brand/venado-antler-logo.png" alt="" width="534" height="626" loading="lazy" decoding="async">
+          <span class="brand__type">
+            <span class="brand__word">Venado</span>
+            <span class="brand__div">Infrastructure</span>
+          </span>
+        </a>
+        <p class="footer__blurb">
+          Self-performed sitework: the dirt, the utilities and the concrete that every project
+          starts with. Own iron, own crews, and quantities we stand behind.
+        </p>
+      </div>
+
+      <div>
+        <p class="footer__ttl">Navigate</p>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#quantities">Quantities</a>
+          <a href="#equipment">Equipment &amp; Capabilities</a>
+          <a href="#projects">Project Record</a>
+          <a href="#bid">Built For The Bid</a>
+          <a href="#invitation">Add Us To Your Bid List</a>
+        </nav>
+      </div>
+
+      <div>
+        <p class="footer__ttl">Estimating</p>
+        <!-- DATA NOTE: replace placeholder contact details. -->
+        <div class="footer__contact">
+          <span class="dn dn--light">[&nbsp;(000) 000-0000&nbsp;]</span>
+          <span class="dn dn--light">[&nbsp;estimating@venadoinfrastructure.com&nbsp;]</span>
+          <span class="dn dn--light">[&nbsp;Street, City, ST 00000&nbsp;]</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span>A Venado Partners company</span>
+      <span>&copy; <span id="year">2026</span> Venado Infrastructure. All rights reserved.</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
